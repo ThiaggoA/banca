@@ -21,11 +21,13 @@ class ComposerStaticInit4aada1bc4462a9748c63dab9dc111346
     );
 
     public static $classMap = array (
+        'Carrinho' => __DIR__ . '/../..' . '/model/Carrinho.class.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Conexao' => __DIR__ . '/../..' . '/model/Conexao.class.php',
         'Config' => __DIR__ . '/../..' . '/model/Config.class.php',
         'Produtos' => __DIR__ . '/../..' . '/model/Produtos.class.php',
         'Rotas' => __DIR__ . '/../..' . '/model/Rotas.class.php',
+        'Sistema' => __DIR__ . '/../..' . '/model/Sistema.class.php',
         'Smarty' => __DIR__ . '/..' . '/smarty/smarty/libs/Smarty.class.php',
         'SmartyBC' => __DIR__ . '/..' . '/smarty/smarty/libs/SmartyBC.class.php',
         'SmartyCompilerException' => __DIR__ . '/..' . '/smarty/smarty/libs/sysplugins/smartycompilerexception.php',

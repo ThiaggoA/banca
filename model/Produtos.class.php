@@ -41,7 +41,8 @@ Class Produtos extends Conexao{
             'PROD_FABRICANTE' => $lista['PROD_FABRICANTE'],
             'PROD_ATIVO' => $lista['PROD_ATIVO'],
             'PROD_FRETE_FREE' => $lista['PROD_FRETE_FREE'],
-            'PROD_PRECO' => $lista['PROD_PRECO'],
+            'PROD_PRECO' =>Sistema::MoedaBR($lista['PROD_PRECO']),
+            'PROD_PRECO_US' =>($lista['PROD_PRECO']),
             'PROD_FRETE_FREE' => $lista['PROD_FRETE_FREE'],
             'CAT_ID' => $lista['CAT_ID'],
             'CAT_NOME' => $lista['CAT_NOME']

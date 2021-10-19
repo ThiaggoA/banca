@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.40, created on 2021-10-18 07:09:54
+/* Smarty version 3.1.40, created on 2021-10-19 05:54:31
   from 'C:\xampp\htdocs\banca\view\produtos_detalhes.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.40',
-  'unifunc' => 'content_616d01a21daf06_65930725',
+  'unifunc' => 'content_616e4177ee25c2_36115898',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4d63c5bd2d092fcd2c7092a039d3706b541136cd' => 
     array (
       0 => 'C:\\xampp\\htdocs\\banca\\view\\produtos_detalhes.tpl',
-      1 => 1634533776,
+      1 => 1634615653,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_616d01a21daf06_65930725 (Smarty_Internal_Template $_smarty_tpl) {
+function content_616e4177ee25c2_36115898 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="pt-br">
 
@@ -100,12 +100,15 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
 
                         </p>
                         <p>
+                        <form name="carrinho" method="post" action="<?php echo $_smarty_tpl->tpl_vars['PAG_COMPRAR']->value;?>
+">
+                            <input type="hidden" name="PROD_ID" value="<?php echo $_smarty_tpl->tpl_vars['P']->value['PROD_ID'];?>
+">
+                            <input type="hidden" name="ACAO" value="add">
                             <button class="btn btn-lg btn-danger mb-3 mb-xl-0 me-2">
                                 <i class="bi-cart"></i> Adicionar ao Carrinho
                             </button>
-                            <button class="btn btn-lg btn-outline-danger">
-                                <i class="bi-heart"></i> Adicionar aos Favoritos
-                            </button>
+                        </form>       
                         </p>
                     </div>
                 </div>

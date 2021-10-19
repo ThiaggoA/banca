@@ -13,8 +13,8 @@ $carrinho = new Carrinho();
 $smarty -> assign('PRO', $carrinho->GetCarrinho());
 $smarty -> assign('TOTAL', Sistema::MoedaBR($carrinho->GetTotal()));
 $smarty -> assign('PAG_CAR_ALTERAR', Rotas::pag_CarrinhoAlterar());
-$smarty -> assign('PAG_CONFIRMAR', Rotas::pag_PedidoConfirmar());
-
+$smarty -> assign('PAG_CARRINHO', Rotas::pag_Carrinho());
+$smarty -> assign('PAG_FINALIZAR', Rotas::pag_Carrinho());
 
 // echo '<PRE>';
 // var_dump($carrinho->GetCarrinho());
@@ -33,11 +33,8 @@ $smarty->assign('GET_HOME', Rotas::get_SiteHome());
 // var_dump($produtos->GetItens());
 // echo '</pre>';
 
-$smarty->display('carrinho.tpl');
+$smarty->display('pedido_confirmar.tpl');
 
-}else{
-    echo '<h4 class="alert alert-danger"> Não possui produtos no carrinho! </h4>';
-    Rotas::Redirecionar(3,Rotas::pag_Produtos());
 }
 
 ?>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.40, created on 2021-10-18 06:26:37
+/* Smarty version 3.1.40, created on 2021-10-19 06:17:36
   from 'C:\xampp\htdocs\banca\view\produtos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.40',
-  'unifunc' => 'content_616cf77db399d6_46256810',
+  'unifunc' => 'content_616e46e0a9a037_80687073',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '797230817ae0428fe12b5955461e1a5515aa4d97' => 
     array (
       0 => 'C:\\xampp\\htdocs\\banca\\view\\produtos.tpl',
-      1 => 1634531191,
+      1 => 1634617041,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_616cf77db399d6_46256810 (Smarty_Internal_Template $_smarty_tpl) {
+function content_616e46e0a9a037_80687073 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="pt-br">
 
@@ -117,28 +117,6 @@ function content_616cf77db399d6_46256810 (Smarty_Internal_Template $_smarty_tpl)
                                     <option>Ordenar pelo maior preço</option>
                                 </select>
                             </form>
-                            <nav class="d-inline-block me-3">
-                                <ul class="pagination pagination-sm my-0">
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">1</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">2</a>
-                                    </li>
-                                    <li class="page-item disabled">
-                                        <a class="page-link" href="#">3</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">4</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">5</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">6</a>
-                                    </li>
-                                </ul>
-                            </nav>
                         </div>
                     </div>
                 </div>
@@ -179,9 +157,6 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
                                 </p>
                             </div>
                             <div class="card-footer">
-                                <a href="carrinho.html" class="btn btn-danger mt-2 d-block">
-                                    Adicionar ao Carrinho
-                                </a>
                                 <small class="text-success">320,5kg em estoque</small>
                             </div>
                         </div>
@@ -189,47 +164,8 @@ $_smarty_tpl->tpl_vars['P']->do_else = false;
                     <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-
-                <hr class="mt-3">
-
-                <div class="row pb-3">
-                    <div class="col-12">
-                        <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
-                            <form class="d-inline-block">
-                                <select class="form-select form-select-sm">
-                                    <option>Ordenar pelo nome</option>
-                                    <option>Ordenar pelo menor preço</option>
-                                    <option>Ordenar pelo maior preço</option>
-                                </select>
-                            </form>
-                            <nav class="d-inline-block me-3">
-                                <ul class="pagination pagination-sm my-0">
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">1</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">2</a>
-                                    </li>
-                                    <li class="page-item disabled">
-                                        <a class="page-link" href="#">3</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">4</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">5</a>
-                                    </li>
-                                    <li class="page-item">
-                                        <a class="page-link" href="#">6</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
             </div>
         </main>
-
     </div>
     <?php echo '<script'; ?>
  src="<?php echo $_smarty_tpl->tpl_vars['GET_TEMA']->value;?>

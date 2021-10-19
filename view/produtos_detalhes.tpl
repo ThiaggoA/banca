@@ -54,12 +54,13 @@
                             {$P.PROD_DESCRICAO}
                         </p>
                         <p>
+                        <form name="carrinho" method="post" action="{$PAG_COMPRAR}">
+                            <input type="hidden" name="PROD_ID" value="{$P.PROD_ID}">
+                            <input type="hidden" name="ACAO" value="add">
                             <button class="btn btn-lg btn-danger mb-3 mb-xl-0 me-2">
                                 <i class="bi-cart"></i> Adicionar ao Carrinho
                             </button>
-                            <button class="btn btn-lg btn-outline-danger">
-                                <i class="bi-heart"></i> Adicionar aos Favoritos
-                            </button>
+                        </form>       
                         </p>
                     </div>
                 </div>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.40, created on 2021-10-18 00:56:59
+/* Smarty version 3.1.40, created on 2021-10-19 02:45:22
   from 'C:\xampp\htdocs\banca\view\index.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.40',
-  'unifunc' => 'content_616caa3b0b5c15_42908959',
+  'unifunc' => 'content_616e1522d4a716_78807466',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8682505321f5cdf59bf8e3ef249481e668c49204' => 
     array (
       0 => 'C:\\xampp\\htdocs\\banca\\view\\index.tpl',
-      1 => 1634452618,
+      1 => 1634604277,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_616caa3b0b5c15_42908959 (Smarty_Internal_Template $_smarty_tpl) {
+function content_616e1522d4a716_78807466 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="pt-br">
 
@@ -87,7 +87,8 @@ function content_616caa3b0b5c15_42908959 (Smarty_Internal_Template $_smarty_tpl)
                             <li class="nav-item">
                                 <span class="badge rounded-pill bg-light text-danger position-absolute ms-4 mt-0"
                                     title="5 produto(s) no carrinho"><small>5</small></span>
-                                <a href="/carrinho.html" class="nav-link text-white">
+                                <a href="<?php echo $_smarty_tpl->tpl_vars['PAG_CARRINHO']->value;?>
+" class="nav-link text-white">
                                     <i class="bi-cart" style="font-size:24px;line-height:24px;"></i>
                                 </a>
                             </li>

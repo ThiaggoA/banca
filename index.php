@@ -1,5 +1,9 @@
 <?php
 
+if(!isset($_SESSION)){
+    session_start();
+}
+
 require './lib/autoload.php';
 
 $smarty = new Template();
@@ -10,6 +14,9 @@ $smarty->assign('GET_TEMA', Rotas::get_SiteTema());
 $smarty->assign('GET_HOME', Rotas::get_SiteHome());
 $smarty->assign('GET_MEDIA', Rotas::get_Media());
 $smarty->assign('GET_CONTATO', Rotas::pag_Contato());
+$smarty->assign('PAG_PRODUTOS', Rotas::pag_Produtos());
+$smarty->assign('PAG_CARRINHO', Rotas::pag_Carrinho());
+
 
 
 // $dados = new Conexao();
